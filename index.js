@@ -43,19 +43,20 @@ function confirm() {
             lose(choice,botChoice);
         }
     }
+    newGame();
 }
 function tie(s1, s2) {
-    result.innerText = "COMPUTER CHOSE: " + s2 + " \n ";
-    result.innerText += s1 + "   YOU TIED   " + s2;
+    result.innerText = "COMPUTER CHOSE: " + s2;
+    result.innerText += "\n\n" + s1 + "   YOU TIED   " + s2;
     document.body.append(result);
 }
 function win(s1, s2) {
-    result.innerText = "COMPUTER CHOSE: " + s2 + " \n ";
-    result.innerText += s1 + "   YOU WON!!!   " + s2;
+    result.innerText = "COMPUTER CHOSE: " + s2;
+    result.innerText += "\n\n" + s1 + "   YOU WON!!!   " + s2;
     document.body.append(result);
 }
 function lose(s1, s2) {
-    result.innerText = "COMPUTER CHOSE: " + s2 + " \n ";
-    result.innerText += s1 + "   YOU LOST   " + s2;
+    result.innerText = "COMPUTER CHOSE: " + s2;
+    result.innerText += "\n\n" + s1 + "   YOU LOST   " + s2;
     document.body.append(result);
 }
